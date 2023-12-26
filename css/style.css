@@ -1,0 +1,790 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  border: 1px solid rgb(192 192 192);
+  margin: 0px 0px;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 9pt;
+  line-height: 1.5rem;
+}
+/* --------------------- BANNER  ------------------------------------ */
+.banner .container {
+  background-color: yellow;
+  position: relative;
+}
+.banner-img {
+  display: block;
+  opacity: 1;
+}
+.banner-name {
+  position: absolute;
+  top: 39%;
+  left: 40%;
+  color: rgb(156, 252, 92);
+  text-align: center;
+  font-size: 19px;
+}
+/* --------------------- BANNER  ------------------------------------ */
+/* --------------------------------NAVI - BAR--------------------------------------- */
+.nav-bar .container {
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-columns: 8fr 8fr 7fr 7fr;
+  position: relative;
+}
+.nav-bar .container > *:nth-child(1) {
+  justify-self: end;
+  padding: 20px;
+  color: #199cdb;
+  font-size: 17px;
+  background-color: rgb(193, 255, 142);
+}
+.nav-bar .container > *:nth-child(2) {
+  justify-self: start;
+  padding: 20px;
+  color: #199cdb;
+  font-size: 17px;
+  background-color: rgb(193, 255, 142);
+}
+.nav-bar .container > *:nth-child(3) {
+  justify-self: end;
+  padding: 20px;
+  color: #199cdb;
+  font-size: 17px;
+  background-color: rgb(193, 255, 142);
+}
+.nav-bar .container > *:nth-child(4) {
+  justify-self: start;
+  padding: 20px;
+  color: #199cdb;
+  font-size: 17px;
+  background-color: rgb(193, 255, 142);
+}
+.nav-bar .container > *:nth-child(1) a,
+.nav-bar .container > *:nth-child(2) a,
+.nav-bar .container > *:nth-child(3) a,
+.nav-bar .container > *:nth-child(4) a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* ---------- hover ---------- */
+.nav-bar .container > *:nth-child(1) a:hover,
+.nav-bar .container > *:nth-child(2) a:hover,
+.nav-bar .container > *:nth-child(3) a:hover,
+.nav-bar .container > *:nth-child(4) a:hover {
+  text-decoration: none;
+  color: red;
+  border-bottom: 2px solid #199cdb;
+  background-color: #fffc5b;
+  border-radius: 20%;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+/* -------------------- avatar ------------------ */
+.avatar {
+  position: absolute;
+  top: 55%;
+  left: 43%;
+  border-radius: 150%;
+  border: 10px solid #fffc5b;
+  width: 180px;
+  height: 180px;
+}
+/* -------------------- avatar ------------------ */
+/* ------------ tạo đường kẻ giữa các grid ------- */
+.nav-bar .container > div {
+  position: relative;
+}
+.nav-bar .container > div::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: grey;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.nav-bar .container > div::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: grey;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+/* ------------ tạo đường kẻ giữa các grid ------- */
+/* --------------------------------NAVI - BAR--------------------------------------- */
+/* ------------------------- ----- AIM - INFO   --------------------------------------- */
+.aim-info .container {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aim {
+  background-color: #f7f7f7c5;
+  padding: 0 33px 30px 33px;
+}
+.info {
+  background-color: #f6f6f673;
+  padding: 0 33px 30px 33px;
+}
+.aim-title,
+.info-title {
+  margin: 121px 0 23px 0;
+  font-size: 27px;
+}
+.info-list {
+  list-style: none;
+}
+.aim-info span {
+  font-weight: bold;
+}
+.info-icon i {
+  padding: 0px 3px;
+}
+.info-icon {
+  color: rgb(0, 132, 255);
+  font-size: 19px;
+  padding: 20px 0px;
+}
+/* ------------------------- ----- AIM - INFO   --------------------------------------- */
+/* ------------------------- ----- job - info   --------------------------------------- */
+/* --------------------- Tạo Grid ----------------------------- */
+.job-info .container {
+  padding: 30px 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 2fr;
+  justify-content: center;
+  gap: 30px;
+}
+.job-info .container > *:nth-child(1),
+.job-info .container > *:nth-child(2),
+.job-info .container > *:nth-child(3),
+.job-info .container > *:nth-child(4),
+.job-info .container > *:nth-child(5),
+.job-info .container > *:nth-child(6) {
+  background-color: rgb(209, 244, 255);
+  border: 1px solid grey;
+}
+/* --------------------- Tạo Grid ----------------------------- */
+/* ------------------------- ----- Kinh nghiem  --------------------------------------- */
+.exp {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+.exp > *:nth-child(3) {
+  grid-column: 1/-1;
+}
+.exp-title {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.exp-icon {
+  font-size: 49px;
+  align-self: center;
+  justify-self: center;
+}
+.exp-content {
+  padding: 0px 18px 81px 47px;
+}
+.exp1,
+.exp2 {
+  padding: 22px 0px;
+}
+.exp span {
+  font-weight: bolder;
+  position: relative;
+}
+/* --------- Tạo dấu chấm ------ */
+.exp span::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  top: 3px;
+  left: -27px;
+}
+/* --------- Tạo dấu chấm ------ */
+/* --------- Đặc biệt -------- */
+.exp-content .special {
+  display: inline;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+/* --------- Đặc biệt -------- */
+/* ------------------------- ----- Kinh nghiem  --------------------------------------- */
+/* ------------------------- ----- Hoc Van  --------------------------------------- */
+.hocvan {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+.hocvan > *:nth-child(3) {
+  grid-column: 1/-1;
+}
+.hocvan-title {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.hocvan-icon {
+  font-size: 49px;
+  align-self: center;
+  justify-self: center;
+}
+.hocvan-content {
+  padding: 0px 18px 81px 47px;
+}
+.hocvan1,
+.hocvan2 {
+  padding: 22px 0px;
+}
+.hocvan span {
+  font-weight: bolder;
+  position: relative;
+}
+/* --------- Tạo dấu chấm ------ */
+.hocvan span::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  top: 3px;
+  left: -27px;
+}
+/* --------- Tạo dấu chấm ------ */
+/* ------------------------- ----- Hoc Van  --------------------------------------- */
+/* ------------------------- ----- Hoat dong  --------------------------------------- */
+.hoatdong {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+.hoatdong > *:nth-child(3) {
+  grid-column: 1/-1;
+}
+.hoatdong-title {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.hoatdong-icon {
+  font-size: 49px;
+  align-self: center;
+  justify-self: center;
+}
+.hoatdong-content {
+  padding: 0px 18px 81px 47px;
+}
+.hoatdong1,
+.hoatdong2 {
+  padding: 22px 0px;
+}
+.hoatdong span {
+  font-weight: bolder;
+  position: relative;
+}
+/* --------- Tạo dấu chấm ------ */
+.hoatdong span::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  top: 3px;
+  left: -27px;
+}
+/* --------- Tạo dấu chấm ------ */
+/* ------------------------- ----- Hoat dong  --------------------------------------- */
+/* ------------------------- ----- So thich  --------------------------------------- */
+.fav {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+.fav > *:nth-child(3) {
+  grid-column: 1/-1;
+}
+.fav-title {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.fav-icon {
+  font-size: 49px;
+  align-self: center;
+  justify-self: center;
+}
+.fav-content {
+  padding: 0px 18px 81px 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+.fav1-icon,
+.fav2-icon,
+.fav3-icon,
+.fav4-icon {
+  font-size: 20px;
+}
+.fav1,
+.fav2,
+.fav3,
+.fav4 {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  justify-items: center;
+}
+/* ------ Tao vong tron bao quanh icon --------- */
+.vongtron {
+  background: #fff;
+  border: 2px solid rgb(43, 170, 255);
+  color: rgb(0, 132, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+/* ------ Tao vong tron bao quanh icon --------- */
+/* ------------------------- ----- So thich  --------------------------------------- */
+/* ------------------------- ----- Ngon ngu  --------------------------------------- */
+.lang {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+.lang > *:nth-child(3) {
+  grid-column: 1/-1;
+}
+.lang-title {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.lang-icon {
+  font-size: 49px;
+  align-self: center;
+  justify-self: center;
+}
+.lang-content {
+  padding-left: 27px;
+}
+.lang-content span {
+  font-weight: bold;
+}
+.lang1,
+.lang2 {
+  padding: 17px 0px;
+}
+.pass {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+  margin-right: 10px;
+}
+.not-pass {
+  background: grey;
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+  margin-right: 10px;
+}
+/* ------------------------- ----- Ngon ngu  --------------------------------------- */
+/* ------------------------- ----- Ky nang   --------------------------------------- */
+.skill {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+.skill > *:nth-child(3) {
+  grid-column: 1/-1;
+}
+.skill-title {
+  font-size: 27px;
+  align-self: center;
+  justify-self: center;
+}
+.skill-icon {
+  font-size: 49px;
+  align-self: center;
+  justify-self: center;
+}
+.skill-content {
+  padding-left: 27px;
+}
+.skill-content span {
+  font-weight: bold;
+}
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
+  padding: 17px 0px;
+}
+.pass {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+  margin-right: 10px;
+}
+.not-pass {
+  background: grey;
+  display: inline-block;
+  height: 3px;
+  width: 45px;
+  margin-right: 10px;
+}
+/* ------------------------- ----- Ky nang   --------------------------------------- */
+/* ------------------------- -------------- job - info   ---------------------------------------------- */
+/* ------------------------- -------------- Chứng Chỉ   ---------------------------------------------- */
+.certificate-title {
+  font-size: 27px;
+  padding-top: 55px;
+}
+.certificate .container {
+  background-color: rgb(211, 211, 211);
+  padding: 0 125px;
+}
+.certificate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  padding: 39px 0;
+}
+.certificate-content > *:nth-child(1) {
+  border-right: 1px solid #d6c08d;
+  margin-bottom: 15px;
+}
+.certificate-content > *:nth-child(2) {
+  margin-bottom: 15px;
+}
+.certificate-content > *:nth-child(3) {
+  grid-column: 1/-1;
+  border-top: 1px solid #d6c08d;
+  padding: 30px 0;
+}
+/* --------------------------------- */
+.certificate1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.certificate2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.certificate3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 18px;
+}
+/* --------------------------------- */
+.certificate-content span {
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: block;
+  padding-bottom: 7px;
+}
+/* ------------------------- -------------- Chứng Chỉ   ---------------------------------------------- */
+/* ------------------------- -------------- Dự Án     ---------------------------------------------- */
+.project-title {
+  font-size: 27px;
+  padding-bottom: 50px;
+}
+.project-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.project .container {
+  padding: 75px 150px;
+}
+/* ------------------------------ Du an 1 ------------------- */
+.project1 {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr 5fr;
+  background-color: rgb(252, 214, 252);
+}
+/* -------hang 2 ------ */
+.project1-name span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 22px 0 24px 25px;
+}
+.project1 > *:nth-child(2) {
+  align-self: center;
+  border: 1px solid grey;
+}
+/* -------hang 2 ------ */
+/* -------hang 3 ------ */
+.project-nav .special {
+  display: inline;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+.project-nav {
+  display: grid;
+  grid-template-columns: 6fr 1fr 4fr 1fr 9fr;
+  align-items: center;
+  border: 1px solid grey;
+}
+.project-nav > *:nth-child(1),
+.project-nav > *:nth-child(2),
+.project-nav > *:nth-child(4) {
+  justify-self: center;
+}
+.project-nav > *:nth-child(2),
+.project-nav > *:nth-child(4) {
+  font-size: 33px;
+}
+/* -------hang 3 ------ */
+/* -------hang 4 ------ */
+.project1-about {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.project1-about > *:nth-child(1),
+.project1-about > *:nth-child(2),
+.project1-about > *:nth-child(3),
+.project1-about > *:nth-child(4),
+.project1-about > *:nth-child(5),
+.project1-about > *:nth-child(6) {
+  padding: 10px;
+}
+/* ------- border các hàng --------- */
+.project1-about > *:nth-child(1),
+.project1-about > *:nth-child(3),
+.project1-about > *:nth-child(5) {
+  border: 1px solid grey;
+  border-right: none;
+}
+.project1-about > *:nth-child(2),
+.project1-about > *:nth-child(4),
+.project1-about > *:nth-child(6) {
+  border: 1px solid grey;
+  border-left: none;
+}
+/* ------- border các hàng --------- */
+/* -------hang 4 ------ */
+/* ------------------------------ Du an 1 ------------------- */
+/* ------------------------------ Du an 2 ------------------- */
+.project2 {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr 5fr;
+  background-color: rgb(252, 214, 252);
+}
+/* -------hang 2 ------ */
+.project2-name span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 22px 0 24px 25px;
+}
+.project2 > *:nth-child(2) {
+  align-self: center;
+  border: 1px solid grey;
+}
+/* -------hang 2 ------ */
+/* -------hang 3 ------ */
+.project-nav .special {
+  display: inline;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+.project-nav {
+  display: grid;
+  grid-template-columns: 6fr 1fr 4fr 1fr 9fr;
+  align-items: center;
+  border: 1px solid grey;
+}
+.project-nav > *:nth-child(1),
+.project-nav > *:nth-child(2),
+.project-nav > *:nth-child(4) {
+  justify-self: center;
+}
+.project-nav > *:nth-child(2),
+.project-nav > *:nth-child(4) {
+  font-size: 33px;
+}
+/* -------hang 3 ------ */
+/* -------hang 4 ------ */
+.project2-about {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.project2-about > *:nth-child(1),
+.project2-about > *:nth-child(2),
+.project2-about > *:nth-child(3),
+.project2-about > *:nth-child(4),
+.project2-about > *:nth-child(5),
+.project2-about > *:nth-child(6) {
+  padding: 10px;
+}
+/* ------- border các hàng --------- */
+.project2-about > *:nth-child(1),
+.project2-about > *:nth-child(3),
+.project2-about > *:nth-child(5) {
+  border: 1px solid grey;
+  border-right: none;
+}
+.project2-about > *:nth-child(2),
+.project2-about > *:nth-child(4),
+.project2-about > *:nth-child(6) {
+  border: 1px solid grey;
+  border-left: none;
+}
+/* ------- border các hàng --------- */
+/* -------hang 4 ------ */
+/* ------------------------------ Du an 2 ------------------- */
+/* ------------------------------ Du an 3 ------------------- */
+.project3 {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr 5fr;
+  background-color: rgb(252, 214, 252);
+}
+/* -------hang 2 ------ */
+.project3-name span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 22px 0 24px 25px;
+}
+.project3 > *:nth-child(2) {
+  align-self: center;
+  border: 1px solid grey;
+}
+/* -------hang 2 ------ */
+/* -------hang 3 ------ */
+.project-nav .special {
+  display: inline;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+.project-nav {
+  display: grid;
+  grid-template-columns: 6fr 1fr 4fr 1fr 9fr;
+  align-items: center;
+  border: 1px solid grey;
+}
+.project-nav > *:nth-child(1),
+.project-nav > *:nth-child(2),
+.project-nav > *:nth-child(4) {
+  justify-self: center;
+}
+.project-nav > *:nth-child(2),
+.project-nav > *:nth-child(4) {
+  font-size: 33px;
+}
+/* -------hang 3 ------ */
+/* -------hang 4 ------ */
+.project3-about {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.project3-about > *:nth-child(1),
+.project3-about > *:nth-child(2),
+.project3-about > *:nth-child(3),
+.project3-about > *:nth-child(4),
+.project3-about > *:nth-child(5),
+.project3-about > *:nth-child(6) {
+  padding: 10px;
+}
+/* ------- border các hàng --------- */
+.project3-about > *:nth-child(1),
+.project3-about > *:nth-child(3),
+.project3-about > *:nth-child(5) {
+  border: 1px solid grey;
+  border-right: none;
+}
+.project3-about > *:nth-child(2),
+.project3-about > *:nth-child(4),
+.project3-about > *:nth-child(6) {
+  border: 1px solid grey;
+  border-left: none;
+}
+/* ------- border các hàng --------- */
+/* -------hang 4 ------ */
+/* ------------------------------ Du an 3 ------------------- */
+/* ------------------------- -------------- Dự Án     ---------------------------------------------- */
+/* ------------------------- -------------- Footer     ---------------------------------------------- */
+.footer .container {
+  background-color: rgb(211, 211, 211);
+  display: grid;
+  grid-template-columns: 9fr 2fr 2fr 2fr 2fr 2fr 9fr;
+  padding: 50px 0;
+}
+/* --------css cac icon ------------ */
+.footer .container > *:nth-child(1),
+.footer .container > *:nth-child(3),
+.footer .container > *:nth-child(5) {
+  justify-self: end;
+  align-self: center;
+  padding-right: 5px;
+  color: #199cdb;
+  font-size: 50px;
+}
+/* --------css cac icon ------------ */
+/* --------css link ------------ */
+.footer .container > *:nth-child(2),
+.footer .container > *:nth-child(4),
+.footer .container > *:nth-child(6) {
+  justify-self: start;
+  align-self: center;
+  padding-left: 5px;
+  font-size: 15px;
+}
+.footer .container > *:nth-child(2) a,
+.footer .container > *:nth-child(4) a,
+.footer .container > *:nth-child(6) a {
+  text-decoration: none;
+  color: #199cdb;
+}
+.footer .container > *:nth-child(2) a:hover,
+.footer .container > *:nth-child(4) a:hover,
+.footer .container > *:nth-child(6) a:hover {
+  text-decoration: none;
+  color: red;
+  border-bottom: 2px solid #199cdb;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+/* --------css link ------------ */
+/* ------------------------- -------------- Footer     ---------------------------------------------- */
+/* ------------------------------------------------   END    ------------------------------------------------------ */
